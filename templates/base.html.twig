@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}"/>
+
+    {% block stylesheets %}
+        <link type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {% endblock %}
+</head>
+<body>
+<header>
+    <h1>Jednodých redakční systém v Symfony</h1>
+</header>
+
+{# Výpis zpráv #}
+{% for type, flash_messages in app.session.flashBag.all %}
+    {% for flash_message in flash_messages %}
+        <div class="message">{{ flash_message }}</div>
+    {% endfor %}
+{% endfor %}
+
+<nav>
+    <ul>
+        <li><a href="{{ path('article') }}">Úvod</a></li>
+        <li><a href="{{ path('article_list') }}">Seznam článků</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+</nav>
+<br clear="both"/>
+
+<article>
+    <header>
+        <h1>{{ block('title') }}</h1>
+    </header>
+    <section>
+        {% block body %} {% endblock %} {# Vložení obsahu do šablony. #}
+    </section>
+</article>
+
+<footer>
+    <p>
+        Děkuji za návštěvu.
+    </p>
+</footer>
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>

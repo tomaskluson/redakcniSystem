@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Výpis článků {% endblock %}
+{% block description %} Výpis všech článků. {% endblock %}
+{% block body %}
+    <table>
+        {% for article in articles %}
+            <tr>
+                <td>
+                    <h2><a href="{{ path('article', {'url': article.url}) }}">{{ article.title }}</a></h2>
+                    {{ article.description }}
+                    <br/>
+                    <a href="{{ path('article_editor', {'url': article.url}) }}">Editovat</a>
+                    <a href="{{ path('remove_article', {'url': article.url}) }}">Odstranit</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
