@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fff745b-52de-4283-bffe-1509b5eb24bc" name="Default Changelist" comment="" />
+    <list default="true" id="3fff745b-52de-4283-bffe-1509b5eb24bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -133,7 +138,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hello-world" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -173,7 +178,8 @@
       <workItem from="1601286457173" duration="1280000" />
       <workItem from="1601287808796" duration="16166000" />
       <workItem from="1601362108327" duration="126000" />
-      <workItem from="1602096397837" duration="10710000" />
+      <workItem from="1602096397837" duration="12644000" />
+      <workItem from="1602185569587" duration="1271000" />
     </task>
     <servers />
   </component>
@@ -201,14 +207,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1601280411366" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602096693228">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602180806498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602096693228" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1602097848934">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602180806498" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1602180801462">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602097848934" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602180801462" />
     <state x="537" y="23" width="600" height="801" key="find.popup" timestamp="1602179583790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
