@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fff745b-52de-4283-bffe-1509b5eb24bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Security/AccessDeniedHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/administration/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/redakcniSystemITNETWORK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/redakcniSystemITNETWORK.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +143,8 @@
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1i6F7uAzSyE3ilq3SVmmMBDvpMO" />
@@ -138,7 +155,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cmf" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,6 +165,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -179,7 +197,7 @@
       <workItem from="1601287808796" duration="16166000" />
       <workItem from="1601362108327" duration="126000" />
       <workItem from="1602096397837" duration="12644000" />
-      <workItem from="1602185569587" duration="1271000" />
+      <workItem from="1602185569587" duration="16400000" />
     </task>
     <servers />
   </component>
@@ -199,31 +217,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1601278871964" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1602173531357">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1602432218115">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602173531357" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601280411366">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602432218115" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602424826098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1601280411366" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602180806498">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602424826098" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602419631019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602096693228" />
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602180806498" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602419631019" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1602429168550">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602429168550" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1602180801462">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602097848934" />
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602180801462" />
-    <state x="537" y="23" width="600" height="801" key="find.popup" timestamp="1602179583790">
+    <state x="537" y="23" width="600" height="801" key="find.popup" timestamp="1602429638989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="537" y="23" width="600" height="801" key="find.popup/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602179583790" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602179183253">
+    <state x="537" y="23" width="600" height="801" key="find.popup/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602429638989" />
+    <state x="537" y="23" width="600" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1602420627631" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602428969653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602179183253" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1366.0.1366.728@0.0.1536.824" timestamp="1602428969653" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602420801126" />
   </component>
 </project>

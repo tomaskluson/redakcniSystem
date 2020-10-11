@@ -2,23 +2,53 @@ security:
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
         users_in_memory: { memory: null }
+
+        # Používá se pro načtení uživatele ze session aj.
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: username
+
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: true
+            anonymous: ~
             lazy: true
             provider: users_in_memory
 
+            # Nastavení přihlašovacího formuláře.
+            form_login:
+                login_path: login
+                check_path: login
+                csrf_token_generator: security.csrf.token_manager
+
+            # Nastavení odhlašování.
+            logout:
+                path: logout
+                target: login
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
 
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
 
+            # Nastavení zpracování odepření přístupu uživateli.
+            access_denied_handler: App\Security\AccessDeniedHandler
+
+
+    # Nastavení algoritmu pro šifrování hesel.
+    encoders:
+        App\Entity\User: bcrypt
+
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+        # Nastavení autorizace pomocí statického ACL.
+        - { path: ^/editor, roles: ROLE_ADMIN }
+        - { path: ^/odstranit, roles: ROLE_ADMIN }
+        - { path: ^/administrace, roles: [ROLE_USER, ROLE_ADMIN] }
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }

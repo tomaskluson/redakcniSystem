@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Přihlášení{% endblock %}
+{% block description %}Přihlášení do uživatelského účtu.{% endblock %}
+{% block body %}
+    {# Formulář pro přihlášování. #}
+    <form action="{{ path('login') }}" method="post" role="form">
+        <div>
+            <br>
+            <label for="username" class="required">Jméno</label><br>
+            <input type="text" id="username" name="_username" required value="{{ last_username }}">
+        </div>
+
+        <div>
+            <br>
+            <label for="password">Heslo</label><br>
+            <input type="password" id="password" name="_password">
+        </div>
+
+        <div><button type="submit">Přihlásit</button></div>
+
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+    </form>
+
+    <p>Pokud ještě nemáte účet, <a href="{{ path('register') }}">zaregistrujte se</a>.</p>
+{% endblock %}

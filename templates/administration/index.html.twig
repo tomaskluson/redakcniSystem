@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administrace webu{% endblock %}
+{% block description %}Administrace webu.{% endblock %}
+{% block body %}
+    <p>Vítejte v administraci! Jste přihlášeni jako <b>{{ app.user.username }}</b>.</p>
+    {% if not is_granted('ROLE_ADMIN') %}
+        <p>Nemáte administrátorská oprávnění, požádejte administrátora webu, aby vám je přidělil.</p>
+    {% endif %}
+    <h2><a href="{{ path('article_editor') }}">Editor článků</a></h2>
+    <h2><a href="{{ path('article_list') }}">Seznam článků</a></h2>
+    <h2><a href="{{ path('logout') }}">Odhlásit</a></h2>
+{% endblock %}

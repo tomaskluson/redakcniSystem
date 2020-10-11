@@ -10,8 +10,10 @@
                     <h2><a href="{{ path('article', {'url': article.url}) }}">{{ article.title }}</a></h2>
                     {{ article.description }}
                     <br/>
-                    <a href="{{ path('article_editor', {'url': article.url}) }}">Editovat</a>
-                    <a href="{{ path('remove_article', {'url': article.url}) }}">Odstranit</a>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <a href="{{ path('article_editor', {'url': article.url}) }}">Editovat</a>
+                        <a href="{{ path('remove_article', {'url': article.url}) }}">Odstranit</a>
+                    {% endif %}
                 </td>
             </tr>
         {% endfor %}

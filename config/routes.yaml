@@ -1,3 +1,15 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+administration:
+  path:         /administrace
+  controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: administration/index.html.twig
+
+logout:
+  path: /odhlasit
+
+articles:
+  resource: App\Controller\ArticleController
+  type: annotation

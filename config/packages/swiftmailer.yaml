@@ -1,0 +1,6 @@
+swiftmailer:
+    url: '%env(MAILER_URL)%'
+    spool: { type: 'memory' }
+
+    # Email, na který se budou posílat všechny zprávy z kontaktního formuláře.
+    delivery_addresses: ['tomas.kluson@seznam.cz']

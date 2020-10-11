@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kontaktní formulář{% endblock %}
+{% block description %}Kontaktní formulář.{% endblock %}
+{% block body %}
+    <p>Kontaktujte nás odesláním formuláře níže.</p>
+    {# Kontaktní formulář. #}
+    {{ form(contactForm) }}
+{% endblock %}
